@@ -9,3 +9,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3 
       - run: ls -la
+      - run: pip install pytest 
+      - run: pytest test_lib.py
